@@ -11,9 +11,9 @@ import org.springframework.beans.factory.config.Scope;
 import org.springframework.web.context.request.FacesRequestAttributes;
 
 /**
- * Implementação do scopo em view para o spring
+ * ImplementaÃ§Ã£o  do scopo em view para o spring
  * 
- * @author alex
+ *  @author Calebe Werneck Couto
  * 
  */
 @SuppressWarnings("unchecked")

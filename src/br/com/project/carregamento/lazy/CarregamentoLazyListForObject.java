@@ -10,9 +10,9 @@ import org.primefaces.model.SortOrder;
 import br.com.framework.controller.crud.Controller;
 import br.com.project.listener.ContextLoaderListenerCaixakiUtils;
 /**
- * Classe que implementa o carregamento preguiçoso (Carregamento por demanda) para os dataTable do primefaces das telas
- * Assim os carregamentos das tabelas quando tiver muitos registros serão sempre rapidos e sem lentidão
- * @author alex
+ * Classe que implementa o carregamento preguiï¿½oso (Carregamento por demanda) para os dataTable do primefaces das telas
+ * Assim os carregamentos das tabelas quando tiver muitos registros serÃ£o sempre rapidos e sem lentidÃ£o
+ *  @author Calebe Werneck Couto
  *
  * @param <T>
  */

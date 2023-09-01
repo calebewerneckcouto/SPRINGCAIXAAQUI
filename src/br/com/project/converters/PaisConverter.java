@@ -11,8 +11,8 @@ import br.com.framework.hibernate.session.HibernateUtil;
 import br.com.project.model.classes.Pais;
 
 /**
- * Responsavel por efetuar a convers„o nos combos de campos de pais
- * @author alex
+ * Responsavel por efetuar a convers√£o  nos combos de campos de pais
+ *  @author Calebe Werneck Couto
  *
  */
 @FacesConverter(forClass = Pais.class)

@@ -2,7 +2,7 @@ package br.com.framework.implementacao.crud;
 
 /**
  * Aramzena variaveis de data source
- * @author alex
+ * @author Calebe Werneck Couto
  *
  */
 public class VariavelConexaoUtil {

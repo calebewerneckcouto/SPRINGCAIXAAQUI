@@ -1,13 +1,13 @@
 package br.com.project.enums;
 
 /**
- * Lista para montar o combo de condição de pesquisa
- * @author alex
+ * Lista para montar o combo de condiÃ§Ã£o de pesquisa
+ *  @author Calebe Werneck Couto
  *
  */
 public enum CondicaoPesquisa{
 
-	CONTEM("Contém"), INICIA_COM("Inicia com"), TERMINA_COM("Termina com"), IGUAL_A(
+	CONTEM("ContÃ©m"), INICIA_COM("Inicia com"), TERMINA_COM("Termina com"), IGUAL_A(
 			"Igual");
 
 	private String condicao;

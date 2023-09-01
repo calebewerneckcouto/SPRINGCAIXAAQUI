@@ -17,36 +17,36 @@ import org.primefaces.context.RequestContext;
 
 import br.com.framework.hibernate.session.HibernateUtil;
 /**
- * Responsavel por manipular as execeÁıes em JSF
- * @author alex
+ * Responsavel por manipular as exece√ß√µes em JSF
+ *  @author Calebe Werneck Couto
  *
  */
 public class CustomExceptionHandler extends ExceptionHandlerWrapper {
 
 	private ExceptionHandler wrapped;
 
-	// ObtÈm uma inst‚ncia do FacesContext
+	// Obt√©m uma inst√¢ncia do FacesContext
 	final FacesContext facesContext = FacesContext.getCurrentInstance();
 
-	// ObtÈm um mapa do FacesContext
+	// Obt√©m um mapa do FacesContext
 	final Map<String, Object> requestMap = facesContext.getExternalContext().getRequestMap();
 
-	// ObtÈm o estado atual da navegaÁ„o entre p·ginas do JSF
+	// Obt√©m o estado atual da navega√ß√£o entre p√°ginas do JSF
 	final NavigationHandler navigationHandler = facesContext.getApplication().getNavigationHandler();
 
 	// Declara o construtor que recebe uma exception do tipo ExceptionHandler
-	// como par‚metro
+	// como par√¢metro
 	CustomExceptionHandler(ExceptionHandler exception) {
 		this.wrapped = exception;
 	}
 
-	// Sobrescreve o mÈtodo ExceptionHandler que retorna a "pilha" de exceÁıes
+	// Sobrescreve o m√©todo ExceptionHandler que retorna a "pilha" de exce√ß√µes
 	@Override
 	public ExceptionHandler getWrapped() {
 		return wrapped;
 	}
 
-	// Sobrescreve o mÈtodo handle que È respons·vel por manipular as exceÁıes
+	// Sobrescreve o m√©todo handle que √© respons√°vel por manipular as exce√ß√µes
 	// do JSF
 	@Override
 	public void handle() throws FacesException {
@@ -57,36 +57,36 @@ public class CustomExceptionHandler extends ExceptionHandlerWrapper {
 			ExceptionQueuedEvent event = iterator.next();
 			ExceptionQueuedEventContext context = (ExceptionQueuedEventContext) event.getSource();
 
-			// Recupera a exceÁ„o do contexto
+			// Recupera a excec√£o do contexto
 			Throwable exception = context.getException();
 
-			// Aqui tentamos tratar a exeÁ„o 
+			// Aqui tentamos tratar a exe√ß√£o 
 			try {
 
 				requestMap.put("exceptionMessage", exception.getMessage());
 				
 				if (exception != null && exception.getMessage() != null && exception.getMessage().indexOf("ConstraintViolationException") != -1) {
 					
-					FacesContext.getCurrentInstance().addMessage("msg",new FacesMessage(FacesMessage.SEVERITY_WARN,"Registro n„o pode ser removido por estar associado.",""));
+					FacesContext.getCurrentInstance().addMessage("msg",new FacesMessage(FacesMessage.SEVERITY_WARN,"Registro nÔøΩo pode ser removido por estar associado.",""));
 				
 				}
 				else if (exception != null && exception.getMessage() != null && exception.getMessage().indexOf("org.hibernate.StaleObjectStateException") != -1) {
 					
 					FacesContext.getCurrentInstance().addMessage("msg",new FacesMessage(FacesMessage.SEVERITY_ERROR,
-					"Registro foi atualizado ou excluÌdo por outro usu·rio. Consulte novamente.",""));
+					"Registro foi atualizado ou excluÔøΩdo por outro usuÔøΩrio. Consulte novamente.",""));
 					
 				}
 				else {
-					// Avisa o usu·rio do erro
+					// Avisa o usu√°rio do erro
 					FacesContext.getCurrentInstance().addMessage("msg",new FacesMessage(FacesMessage.SEVERITY_FATAL,"O sistema se recuperou de um erro inesperado.",""));
 
-					// Tranquiliza o usu·rio para que ele continue usando o sistema
-					FacesContext.getCurrentInstance().addMessage("msg",new FacesMessage(FacesMessage.SEVERITY_INFO,"VocÍ pode continuar usando o sistema normalmente!",""));
+					// Tranquiliza o usu√°rio para que ele continue usando o sistema
+					FacesContext.getCurrentInstance().addMessage("msg",new FacesMessage(FacesMessage.SEVERITY_INFO,"VocÔøΩ pode continuar usando o sistema normalmente!",""));
 					
 					FacesContext.getCurrentInstance().addMessage("msg",new FacesMessage(FacesMessage.SEVERITY_FATAL,"O erro foi causado por:\n"+exception.getMessage(), ""));
 					
-					// SETA A NAVEGA«√O PARA UMA P¡GINA PADR√O - REDIRECIONA PARA UMA PAGINA DE ERRO.
-					//esse alert apenas È exibio se a pagina n„o redirecionar
+					// SETA A NAVEGA√á√ÉO PARA UMA P√ÅGINA PADR√ÉO - REDIRECIONA PARA UMA PAGINA DE ERRO.
+					//esse alert apenas √© exibido se a pagina  n√£o redirecionar
 					RequestContext.getCurrentInstance().execute("alert('O sistema se recuperou de um erro inesperado.')"); 
 					
 					 RequestContext.getCurrentInstance().showMessageInDialog(new FacesMessage(FacesMessage.SEVERITY_INFO, "Erro", "O sistema se recuperou de um erro inesperado.."));
@@ -103,10 +103,10 @@ public class CustomExceptionHandler extends ExceptionHandlerWrapper {
 				if (sf.getCurrentSession().getTransaction().isActive()) {
 					sf.getCurrentSession().getTransaction().rollback();
 				}
-				//imprimie exceÁ„o no console
+				//imprimie exce√ß√£o no console
 				exception.printStackTrace();
 				
-				// Remove a exeÁ„o da fila
+				// Remove a exe√ß√£o da fila
 				iterator.remove();
 			}
 		}

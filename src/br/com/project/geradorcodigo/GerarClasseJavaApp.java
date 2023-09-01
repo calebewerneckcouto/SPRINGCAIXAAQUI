@@ -37,11 +37,11 @@ import br.com.srv.implementacao.SrvEntidadeImpl;
 import br.com.srv.interfaces.SrvEntidade;
 
 /**
- * Tela para selecionar qual classe java será criada automaticamente Gera
+ * Tela para selecionar qual classe java serï¿½ criada automaticamente Gera
  * automaticamente Classes, Repositorios, Servicos e Controllers e Daos em seu
  * determinados pacotes
  * 
- * @author alex
+ *  @author Calebe Werneck Couto
  * 
  */
 
@@ -53,12 +53,12 @@ public class GerarClasseJavaApp extends JFrame implements ActionListener,
 	private String pathJava = "src";
 	private String fileReplace = "file:";
 
-	@CheckBoxGeraCodigoAnnotation(descricao = "Interface Serviço")
+	@CheckBoxGeraCodigoAnnotation(descricao = "Interface ServiÃ§o")
 	private String pathSrvInterface = SrvEntidade.class.getResource("")
 			.toString().replaceAll(pathJavaReplace, pathJava)
 			.replaceAll(fileReplace, "");
 
-	@CheckBoxGeraCodigoAnnotation(descricao = "Serviço Implementação")
+	@CheckBoxGeraCodigoAnnotation(descricao = "ServiÃ§o ImplementaÃ§Ã£o")
 	private String pathSrvImpl = SrvEntidadeImpl.class.getResource("")
 			.toString().replaceAll(pathJavaReplace, pathJava)
 			.replaceAll(fileReplace, "");
@@ -68,7 +68,7 @@ public class GerarClasseJavaApp extends JFrame implements ActionListener,
 			.toString().replaceAll(pathJavaReplace, pathJava)
 			.replaceAll(fileReplace, "");
 
-	@CheckBoxGeraCodigoAnnotation(descricao = "Dao Implementação")
+	@CheckBoxGeraCodigoAnnotation(descricao = "Dao ImplementaÃ§Ã£o")
 	private String pathDaoImpl = DaoEntidade.class.getResource("").toString()
 			.replaceAll(pathJavaReplace, pathJava).replaceAll(fileReplace, "");
 
@@ -123,7 +123,7 @@ public class GerarClasseJavaApp extends JFrame implements ActionListener,
 		});
 
 		panel.setBorder(new TitledBorder("Classes a serem gerados"));
-		panelAcao.setBorder(new TitledBorder("Ações"));
+		panelAcao.setBorder(new TitledBorder("AÃ§Ãµes"));
 
 		GridBagConstraints gridBagConstraints = new GridBagConstraints();
 		gridBagConstraints.gridx = 0;
@@ -286,7 +286,7 @@ public class GerarClasseJavaApp extends JFrame implements ActionListener,
 
 		if (resultado.isEmpty()) {
 			JOptionPane.showMessageDialog(this,
-					"Selecione as classes para geração.");
+					"Selecione as classes para geraÃ§Ã£o.");
 			return false;
 		}
 
@@ -294,7 +294,7 @@ public class GerarClasseJavaApp extends JFrame implements ActionListener,
 		if (conteudo.length > 0) {
 			for (int i = 0; i < conteudo.length; i++) {
 				if (!Character.isAlphabetic(conteudo[i])) {
-					JOptionPane.showMessageDialog(this, "Caracter inválido ->"
+					JOptionPane.showMessageDialog(this, "Caracter invÃ¡lido ->"
 							+ conteudo[i]);
 					return false;
 				}
@@ -510,7 +510,7 @@ public class GerarClasseJavaApp extends JFrame implements ActionListener,
 		if (!filepathController.exists()) {
 			filepathController.createNewFile();
 		} else {
-			JOptionPane.showMessageDialog(this, "Já existe "
+			JOptionPane.showMessageDialog(this, "JÃ¡ existe "
 					+ filepathController.getName());
 		}
 	}
@@ -748,7 +748,7 @@ public class GerarClasseJavaApp extends JFrame implements ActionListener,
 	}
 	
 	public static void montaSaidaTextArea(final JTextArea t) {
-	    t.setToolTipText("Ctrl + ENTER - próximo campo");
+	    t.setToolTipText("Ctrl + ENTER - prï¿½ximo campo");
 
 	    t.addKeyListener(new KeyAdapter() {
 	      public void keyReleased(KeyEvent e) {

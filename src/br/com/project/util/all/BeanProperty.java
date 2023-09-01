@@ -3,8 +3,8 @@ package br.com.project.util.all;
 import java.io.Serializable;
 
 /**
- * Usada para estabelecer o ambiente que o projeto está sendo executado(Produção ou teste)
- * @author alex
+ * Usada para estabelecer o ambiente que o projeto esta sendo executado(ProduÃ§Ã£o ou teste)
+ *  @author Calebe Werneck Couto
  *
  */
 public class BeanProperty implements Serializable{

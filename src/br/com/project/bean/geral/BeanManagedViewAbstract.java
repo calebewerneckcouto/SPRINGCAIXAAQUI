@@ -31,7 +31,7 @@ import br.com.project.util.all.UtilitariaRegex;
  * Responsavel pela rotina de consulta e abstracao de metodos de CRUD e outros
  * padroes
  * 
- * @author alex
+ *  @author Calebe Werneck Couto
  * 
  */
 @Component
@@ -63,7 +63,7 @@ public abstract class BeanManagedViewAbstract extends BeanReportView {
 
 	/**
 	 * 
-	 * @return List<?> Lista dos dados retornados pela consulta genérica
+	 * @return List<?> Lista dos dados retornados pela consulta genÃ©rica
 	 * @throws Exception
 	 */
 	@SuppressWarnings("rawtypes")
@@ -182,7 +182,7 @@ public abstract class BeanManagedViewAbstract extends BeanReportView {
 	}
 
 	/**
-	 * Realiza a validação de campos que são obrigatorios mas não estão sendo
+	 * Realiza a validaÃ§Ã£o de campos que  sÃ£o obrigatorios mas nÃ£o estÃ£o  sendo
 	 * validados em tela
 	 * 
 	 * @param Object
@@ -233,7 +233,7 @@ public abstract class BeanManagedViewAbstract extends BeanReportView {
 	}
 
 	/**
-	 * Monta o restante a pesquisa atraves da opção selecionada
+	 * Monta o restante a pesquisa atraves da opï¿½ï¿½o selecionada
 	 * 
 	 * @param campoPesquisaSelecionado
 	 */
@@ -269,7 +269,7 @@ public abstract class BeanManagedViewAbstract extends BeanReportView {
 
 	/**
 	 * 
-	 * @return List<SelectItem> para o combo de condição de pesquisa
+	 * @return List<SelectItem> para o combo de condiÃ§Ã£o de pesquisa
 	 */
 	public List<SelectItem> getListaCondicaoPesquisa() {
 		listaCondicaoPesquisa = new ArrayList<SelectItem>();
@@ -314,7 +314,7 @@ public abstract class BeanManagedViewAbstract extends BeanReportView {
 			tipoEntidade = (String) htmlInputHidden.getAttributes().get(
 					"tipoEntidadeTemp");
 		} catch (Exception e) {
-			// execeção omitida
+			// execeï¿½ï¿½o omitida
 		}
 
 		if (tipoEntidade == null) {
