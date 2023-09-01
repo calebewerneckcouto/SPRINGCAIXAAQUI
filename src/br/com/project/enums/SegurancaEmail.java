@@ -3,7 +3,7 @@ package br.com.project.enums;
 public enum SegurancaEmail {
 
 	TIPO_EMAIL_SEGURANCA_SEM_CRIPTOGRAFIA("Sem criptografia"), TIPO_EMAIL_SEGURANCA_TLS(
-			"Segurança tls"), TIPO_EMAIL_SEGURANCA_SSL("Segurança ssl");
+			"SeguranÃ§a tls"), TIPO_EMAIL_SEGURANCA_SSL("SeguranÃ§a ssl");
 
 	private String tipo = "";
 

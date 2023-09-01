@@ -67,13 +67,13 @@ public class CustomExceptionHandler extends ExceptionHandlerWrapper {
 				
 				if (exception != null && exception.getMessage() != null && exception.getMessage().indexOf("ConstraintViolationException") != -1) {
 					
-					FacesContext.getCurrentInstance().addMessage("msg",new FacesMessage(FacesMessage.SEVERITY_WARN,"Registro n�o pode ser removido por estar associado.",""));
+					FacesContext.getCurrentInstance().addMessage("msg",new FacesMessage(FacesMessage.SEVERITY_WARN,"Registro não pode ser removido por estar associado.",""));
 				
 				}
 				else if (exception != null && exception.getMessage() != null && exception.getMessage().indexOf("org.hibernate.StaleObjectStateException") != -1) {
 					
 					FacesContext.getCurrentInstance().addMessage("msg",new FacesMessage(FacesMessage.SEVERITY_ERROR,
-					"Registro foi atualizado ou exclu�do por outro usu�rio. Consulte novamente.",""));
+					"Registro foi atualizado ou excluído por outro usuário. Consulte novamente.",""));
 					
 				}
 				else {

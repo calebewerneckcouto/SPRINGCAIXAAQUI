@@ -5,7 +5,7 @@ public enum TipoCadastro {
 	TIPO_CADASTRO_CONSTRUTORA("Construtora"),
 	TIPO_CADASTRO_CLIENTE("Cliente"),
 	TIPO_CADASTRO_FORNECEDOR("Fornecedor"),
-	TIPO_CADASTRO_FUNCIONARIO("Funcion·rio"),
+	TIPO_CADASTRO_FUNCIONARIO("Funcion√°rio"),
 	TIPO_CADASTRO_VENDEDOR("Vendedor");
 
 	private String tipo = "";

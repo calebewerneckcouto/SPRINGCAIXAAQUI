@@ -26,12 +26,12 @@ public class Bairro implements Serializable {
 
 	private static final long serialVersionUID = 1L;
 
-	@IdentificaCampoPesquisa(descricaoCampo = "Código", campoConsulta = "bai_codigo")
+	@IdentificaCampoPesquisa(descricaoCampo = "CÃ³digo", campoConsulta = "bai_codigo")
 	@Id
 	@GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "bairro_seq")
 	private Long bai_codigo;
 
-	@IdentificaCampoPesquisa(descricaoCampo = "Descrição", campoConsulta = "bai_descricao", principal = 1)
+	@IdentificaCampoPesquisa(descricaoCampo = "DescriÃ§Ã£o", campoConsulta = "bai_descricao", principal = 1)
 	@Column(length = 100, nullable = false)
 	private String bai_descricao;
 
