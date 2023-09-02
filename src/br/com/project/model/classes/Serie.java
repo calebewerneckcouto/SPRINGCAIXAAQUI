@@ -23,12 +23,12 @@ public class Serie implements Serializable {
 
 	private static final long serialVersionUID = 6650683358477333875L;
 
-	@IdentificaCampoPesquisa(descricaoCampo = "Código", campoConsulta = "ser_codigo")
+	@IdentificaCampoPesquisa(descricaoCampo = "CÃ³digo", campoConsulta = "ser_codigo")
 	@Id
 	@GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "serie_seq")
 	private Long ser_codigo;
 
-	@IdentificaCampoPesquisa(descricaoCampo = "Descrição", campoConsulta = "ser_descricao", principal = 1)
+	@IdentificaCampoPesquisa(descricaoCampo = "DescriÃ§Ã£o", campoConsulta = "ser_descricao", principal = 1)
 	@Column(length = 100, nullable = false)
 	private String ser_descricao;
 

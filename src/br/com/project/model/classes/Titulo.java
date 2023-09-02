@@ -36,7 +36,7 @@ public class Titulo implements Serializable {
 
 	private static final long serialVersionUID = 1L;
 
-	@IdentificaCampoPesquisa(descricaoCampo = "CÛdigo", campoConsulta = "tit_codigo")
+	@IdentificaCampoPesquisa(descricaoCampo = "C√≥digo", campoConsulta = "tit_codigo")
 	@Id
 	@GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "titulo_seq")
 	private Long tit_codigo;
@@ -65,21 +65,21 @@ public class Titulo implements Serializable {
 	@Temporal(TemporalType.DATE)
 	private Date tit_databaixa;
 
-	@IdentificaCampoPesquisa(descricaoCampo = "Usu·rio abertura", campoConsulta = "ent_codigoabertura.ent_nomefantasia", principal = 1)
+	@IdentificaCampoPesquisa(descricaoCampo = "Usu√°rio abertura", campoConsulta = "ent_codigoabertura.ent_nomefantasia", principal = 1)
 	@Basic
 	@ManyToOne
 	@JoinColumn(nullable = false, name = "ent_codigoabertura", updatable = false)
 	@ForeignKey(name = "ent_codigoabertura_fk")
 	private Entidade ent_codigoabertura = new Entidade(); 
 
-	@IdentificaCampoPesquisa(descricaoCampo = "Usu·rio baixa", campoConsulta = "ent_codigobaixa.ent_nomefantasia")
+	@IdentificaCampoPesquisa(descricaoCampo = "Usu√°rio baixa", campoConsulta = "ent_codigobaixa.ent_nomefantasia")
 	@Basic
 	@ManyToOne
 	@JoinColumn(nullable = true, name = "ent_codigobaixa", updatable = true)
 	@ForeignKey(name = "ent_codigobaixa_fk")
 	private Entidade ent_codigobaixa = new Entidade();
 
-	@IdentificaCampoPesquisa(descricaoCampo = "Entidade respons·vel", campoConsulta = "ent_codigo.ent_nomefantasia")
+	@IdentificaCampoPesquisa(descricaoCampo = "Entidade respons√°vel", campoConsulta = "ent_codigo.ent_nomefantasia")
 	@Basic
 	@ManyToOne
 	@JoinColumn(nullable = false, name = "ent_codigo")
@@ -94,7 +94,7 @@ public class Titulo implements Serializable {
 	@Column(scale = 4, precision = 15)
 	private BigDecimal tit_descontobaixa = null;
 
-	@IdentificaCampoPesquisa(descricaoCampo = "AcrÈscimo em baixa", campoConsulta = "tit_acrescimobaixa") 
+	@IdentificaCampoPesquisa(descricaoCampo = "Acr√©scimo em baixa", campoConsulta = "tit_acrescimobaixa") 
 	@Column(scale = 4, precision = 15)
 	private BigDecimal tit_acrescimobaixa = null;
 
@@ -102,7 +102,7 @@ public class Titulo implements Serializable {
 	@Column(scale = 4, precision = 15)
 	private BigDecimal tit_valorbaixa = null; 
 
-	@IdentificaCampoPesquisa(descricaoCampo = "ObservaÁ„o", campoConsulta = "tit_observacao")
+	@IdentificaCampoPesquisa(descricaoCampo = "Observa√ß√£o", campoConsulta = "tit_observacao")
 	@Column(columnDefinition = "text", length = 500)
 	private String tit_observacao;
 	

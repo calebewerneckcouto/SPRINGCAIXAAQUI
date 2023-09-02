@@ -37,7 +37,7 @@ import br.com.srv.implementacao.SrvEntidadeImpl;
 import br.com.srv.interfaces.SrvEntidade;
 
 /**
- * Tela para selecionar qual classe java ser� criada automaticamente Gera
+ * Tela para selecionar qual classe java será criada automaticamente Gera
  * automaticamente Classes, Repositorios, Servicos e Controllers e Daos em seu
  * determinados pacotes
  * 
@@ -748,7 +748,7 @@ public class GerarClasseJavaApp extends JFrame implements ActionListener,
 	}
 	
 	public static void montaSaidaTextArea(final JTextArea t) {
-	    t.setToolTipText("Ctrl + ENTER - pr�ximo campo");
+	    t.setToolTipText("Ctrl + ENTER - próximo campo");
 
 	    t.addKeyListener(new KeyAdapter() {
 	      public void keyReleased(KeyEvent e) {

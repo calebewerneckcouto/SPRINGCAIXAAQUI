@@ -36,7 +36,7 @@ public class ComissaoFuncionarioFilial implements Serializable {
 
 	private static final long serialVersionUID = 1L;
 
-	@IdentificaCampoPesquisa(descricaoCampo = "CÛdigo", campoConsulta = "com_codigo", principal = 2)
+	@IdentificaCampoPesquisa(descricaoCampo = "C√≥digo", campoConsulta = "com_codigo", principal = 2)
 	@Id
 	@GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "comissao_funcionario_filial_seq")
 	private Long com_codigo;
@@ -55,7 +55,7 @@ public class ComissaoFuncionarioFilial implements Serializable {
 	@ForeignKey(name = "ent_codigo_fk")
 	private Entidade ent_codigo = new Entidade();
 
-	@IdentificaCampoPesquisa(descricaoCampo = "DescriÁ„o", campoConsulta = "com_descricao", principal = 3)
+	@IdentificaCampoPesquisa(descricaoCampo = "Descri√ß√£o", campoConsulta = "com_descricao", principal = 3)
 	@Basic
 	@Column(nullable = true, length = 100)
 	private String com_descricao;
@@ -123,7 +123,7 @@ public class ComissaoFuncionarioFilial implements Serializable {
 			if (!ent_codigo.getEnt_tipo().equals(
 					TipoCadastro.TIPO_CADASTRO_FUNCIONARIO)) {
 				throw new Exception(
-						"Tipo da entidade adicionada n„o È de funcion·rio.");
+						"Tipo da entidade adicionada n√£o √© de funcion√°rio.");
 			}
 		}
 		this.ent_codigo = ent_codigo;

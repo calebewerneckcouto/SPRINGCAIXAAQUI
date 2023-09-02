@@ -33,7 +33,7 @@ public class Mensagem implements Serializable{
 	
 	private static final long serialVersionUID = 1L;
 
-	@IdentificaCampoPesquisa(descricaoCampo = "Código", campoConsulta = "men_codigo")
+	@IdentificaCampoPesquisa(descricaoCampo = "CÃ³digo", campoConsulta = "men_codigo")
 	@Id
 	@GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "mensagem_seq")
 	private Long men_codigo;

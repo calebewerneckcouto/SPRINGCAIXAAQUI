@@ -31,7 +31,7 @@ public class EntidadeEntidade implements Serializable {
 	private static final long serialVersionUID = -5109692706237143193L;
 
 	@Id
-	@IdentificaCampoPesquisa(descricaoCampo = "Código", campoConsulta = "ents_codigo")
+	@IdentificaCampoPesquisa(descricaoCampo = "CÃ³digo", campoConsulta = "ents_codigo")
 	@GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "entidade_entidade_seq")
 	private Long ents_codigo;
 
