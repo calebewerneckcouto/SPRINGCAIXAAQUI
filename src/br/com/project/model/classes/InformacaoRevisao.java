@@ -14,10 +14,10 @@ import org.hibernate.envers.RevisionEntity;
 import br.com.project.listener.CustomListener;
 
 /**
- * Reprensenta a tabela de revision log em nivel de aplicaÃ§Ã£o hibernate
+ * Reprensenta a tabela de revision log em nivel de aplicação do hibernate
  * envers
  * 
- *  @author Calebe Werneck Couto
+ * @author Alex
  * 
  */
 @Entity

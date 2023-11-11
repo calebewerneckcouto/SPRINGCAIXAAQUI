@@ -5,7 +5,7 @@ import java.util.Comparator;
 
 /**
  * Usado para montar o combo de campos de consulta
- *  @author Calebe Werneck Couto
+ * @author alex
  *
  */
 public class ObjetoCampoConsulta implements Serializable, Comparator<ObjetoCampoConsulta>{

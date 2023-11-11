@@ -77,7 +77,7 @@ public class GraficoPaginaInicialBeanView extends BeanManagedViewAbstract {
 	}
 
 	/**
-	 * Não está sendo usado
+	 * Nï¿½o estï¿½ sendo usado
 	 * @return
 	 * @throws IOException
 	 */
@@ -91,7 +91,7 @@ public class GraficoPaginaInicialBeanView extends BeanManagedViewAbstract {
 					Double.parseDouble(map.get("media_valor").toString()));
 		}
 		JFreeChart jfreechart = ChartFactory.createPieChart3D(
-				"Média do títulos por origem nos últimos 7 dias", dataset,
+				"Mï¿½dia do tï¿½tulos por origem nos ï¿½ltimos 7 dias", dataset,
 				true, true, false);
 		File chartFile = new File("dynamichart");
 		ChartUtilities.saveChartAsPNG(chartFile, jfreechart, 375, 300);
@@ -101,7 +101,7 @@ public class GraficoPaginaInicialBeanView extends BeanManagedViewAbstract {
 	}
 
 	/**
-	 * Não está sendo usado
+	 * Nï¿½o estï¿½ sendo usado
 	 * @return
 	 * @throws IOException
 	 */
@@ -122,7 +122,7 @@ public class GraficoPaginaInicialBeanView extends BeanManagedViewAbstract {
 	}
 
 	/**
-	 * Não está sendo usado
+	 * Nï¿½o estï¿½ sendo usado
 	 * @return
 	 * @throws IOException
 	 */

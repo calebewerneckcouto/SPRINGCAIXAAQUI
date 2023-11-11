@@ -24,17 +24,17 @@ public class Produto implements Serializable {
 
 	private static final long serialVersionUID = 1L;
 
-	@IdentificaCampoPesquisa(descricaoCampo = "C√≥digo", campoConsulta = "prd_codigo")
+	@IdentificaCampoPesquisa(descricaoCampo = "CÛdigo", campoConsulta = "prd_codigo")
 	@Id
 	@Column(name = "prd_codigo")
 	@GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "produto_seq")
 	private Long prd_codigo;
 
-	@IdentificaCampoPesquisa(descricaoCampo = "Descri√ß√£o", campoConsulta = "prd_descricao", principal = 1)
+	@IdentificaCampoPesquisa(descricaoCampo = "DescriÁ„o", campoConsulta = "prd_descricao", principal = 1)
 	@Column(nullable = false)
 	private String prd_descricao;
 
-	@IdentificaCampoPesquisa(descricaoCampo = "Comiss√£o filial", campoConsulta = "prd_comissaofilial")
+	@IdentificaCampoPesquisa(descricaoCampo = "Comiss„o filial", campoConsulta = "prd_comissaofilial")
 	@Column(scale = 4, precision = 15)
 	private BigDecimal prd_comissaofilial = null;
 

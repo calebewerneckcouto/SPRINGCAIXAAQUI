@@ -30,12 +30,12 @@ public class Empreendimento implements Serializable {
 
 	private static final long serialVersionUID = 1L;
 
-	@IdentificaCampoPesquisa(descricaoCampo = "CÃ³digo", campoConsulta = "emp_id")
+	@IdentificaCampoPesquisa(descricaoCampo = "Código", campoConsulta = "emp_id")
 	@Id
 	@GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "empreendimento_seq")
 	private Long emp_id;
 
-	@IdentificaCampoPesquisa(descricaoCampo = "DescriÃ§Ã£o", campoConsulta = "emp_descricao", principal = 1)
+	@IdentificaCampoPesquisa(descricaoCampo = "Descrição", campoConsulta = "emp_descricao", principal = 1)
 	@Column(length = 100, nullable = false)
 	private String emp_descricao;
 

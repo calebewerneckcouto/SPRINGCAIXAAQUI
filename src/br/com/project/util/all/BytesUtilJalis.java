@@ -9,7 +9,7 @@ import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
 /**
  * Classe utilitaria para conversão de byte[]
- *  @author Calebe Werneck Couto
+ * @author alex
  *
  */
 public class BytesUtilJalis {

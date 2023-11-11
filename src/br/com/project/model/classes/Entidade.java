@@ -50,7 +50,7 @@ public class Entidade implements Serializable {
 
 	private static final long serialVersionUID = 1L;
 
-	@IdentificaCampoPesquisa(descricaoCampo = "C√≥digo", campoConsulta = "ent_codigo")
+	@IdentificaCampoPesquisa(descricaoCampo = "CÛdigo", campoConsulta = "ent_codigo")
 	@Id
 	@GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "entidade_seq")
 	private Long ent_codigo;
@@ -65,7 +65,7 @@ public class Entidade implements Serializable {
 	@Column(length = 100)
 	private String ent_nomefantasia;
 
-	@IdentificaCampoPesquisa(descricaoCampo = "Raz√£o Social", campoConsulta = "ent_razao", principal = 2)
+	@IdentificaCampoPesquisa(descricaoCampo = "Raz„o Social", campoConsulta = "ent_razao", principal = 2)
 	@Column(length = 100)
 	private String ent_razao;
 

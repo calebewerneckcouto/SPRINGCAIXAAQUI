@@ -23,7 +23,7 @@
 		<h:outputScript name="jquery.maskedinput.js" library="javascript" id="jsMaskInputSistema"/>
 		<h:outputScript name="scripty.js" library="javascript" id="jsScriptSistema"/>
 		<h:outputScript name="jsf.js" library="javax.faces"/>
-		<h:outputScript name="googlechart.js" library="javascript"/> 
+		<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
 		<h:outputScript name="deployJava.js"  library="javascript" />
 </h:head>
 <h:form id="formTemplate" prependId="false">
@@ -65,7 +65,7 @@
 					#{entidadeBeanView.usuarioLogadoSecurity}
 					<br id="quebraUser"/> 
 						&Uacute;ltimo login: 
-						<h:outputLabel value="#{entidadeBeanView.ultimoAcesso}" id="saidaUltimoAcesso">
+						<h:outputLabel value="#{entidadeBeanView.ultimoAcesso}" id="ulitmoAcesso">
 							<f:convertDateTime locale="pt_BR" pattern="dd/MM/yyyy HH:mm:ss"
 							dateStyle="long" timeStyle="full" timeZone="GMT-03:00"/>
 						</h:outputLabel>

@@ -6,8 +6,8 @@ import javax.servlet.http.HttpSessionListener;
 import org.springframework.stereotype.Controller;
 
 /**
- * Responsavel por interceptar a cria√ß√£o  destrui√ß√£o  das sess√µes
- *  @author Calebe Werneck Couto
+ * Responsavel por interceptar a criaÁ„o e destruiÁ„o das sessıes
+ * @author alex
  *
  */
 @Controller

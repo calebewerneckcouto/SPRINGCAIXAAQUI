@@ -15,7 +15,7 @@ function reloadPage() {
 
 function validaDescricao(descricao) {
 	if (descricao === ' ' || descricao.trim() === '') {
-		return "DescriÃ§Ã£o nÃ£o foi informada.";
+		return "Descrição não foi informada.";
 	}
 	 else {
 		return descricao;
@@ -23,7 +23,7 @@ function validaDescricao(descricao) {
 }
 
 
-// invalida a sessÃ£o do spring security
+// invalida a sessï¿½o do spring security
 function logout(contextPath) {
 	
 	document.location =	 contextPath + '/j_spring_security_logout';
@@ -170,29 +170,29 @@ function ocultarMenu() {
 		PrimeFaces.locales['pt'] = {
 			closeText : 'Fechar',
 			prevText : 'Anterior',
-			nextText : 'PrÃ³ximo',
-			currentText : 'ComeÃ§o',
+			nextText : 'Próximo',
+			currentText : 'Começo',
 			monthNames : [ 'Janeiro', 'Fevereiro', 'Marcio', 'Abril', 'Maio',
 					'Junho', 'Julho', 'Agosto', 'Setembro', 'Outubro', 'Novembro',
 					'Dezembro' ],
 			monthNamesShort : [ 'Jan', 'Fev', 'Mar', 'Abr', 'Mai', 'Jun', 'Jul',
 					'Ago', 'Set', 'Out', 'Nov', 'Dez' ],
-			dayNames : [ 'Domingo', 'Segunda', 'TerÃ§a', 'Quarta', 'Quinta',
-					'Sexta', 'SÃ¡bado' ],
-			dayNamesShort : [ 'Dom', 'Seg', 'Ter', 'Qua', 'Qui', 'Sex', 'SÃ¡b' ],
+			dayNames : [ 'Domingo', 'Segunda', 'Terça', 'Quarta', 'Quinta',
+					'Sexta', 'Sábado' ],
+			dayNamesShort : [ 'Dom', 'Seg', 'Ter', 'Qua', 'Qui', 'Sex', 'Sáb' ],
 			dayNamesMin : [ 'D', 'S', 'T', 'Q', 'Q', 'S', 'S' ],
 			weekHeader : 'Semana',
 			firstDay : 0,
 			isRTL : false,
 			showMonthAfterYear : false,
 			yearSuffix : '',
-			timeOnlyTitle : 'SÃ£o Horas',
+			timeOnlyTitle : 'São Horas',
 			timeText : 'Tempo',
 			hourText : 'Hora',
 			minuteText : 'Minuto',
 			secondText : 'Segundo',
 			ampm : false,
-			month : 'MÃªs',
+			month : 'Mês',
 			week : 'Semana',
 			day : 'Dia',
 			allDayText : 'Todo o Dia'
@@ -229,7 +229,7 @@ function carregarIdElementosPagina() {
 }
 /**
  * Retorno o valor do id do componente dentro do documento html passando como
- * parametro a descriÃ§Ã£o do id declarada em jsf
+ * parametro a descriï¿½ï¿½o do id declarada em jsf
  * 
  * @param id
  */
@@ -245,7 +245,7 @@ function getValorElementPorId(id) {
 }
 
 /**
- * primefaces.js codigo fonte
+ * primefaces.js cï¿½digo fonte
  * escapeClientId:function(a){return"#"+a.replace(/:/g,"\\:")}
  * 
  * @param id
@@ -261,7 +261,7 @@ function getValorElementPorIdJQuery(id) {
 }
 
 /**
- * Adiciona foco ao campo passado como parametro
+ * Adiciona foco ao campo passado como paramentro
  * 
  * @param campo
  */
@@ -883,10 +883,10 @@ function copiarValorFantasiaRazao(campo) {
 function confirmaLeituraMsg(men_codigo) {
 	
 	 $.get("confirmaLeituraMsg?men_codigo=" + men_codigo, function(resposta) {
-		 // alguma aÃ§Ã£o aqui se precisar
+		 // alguma ação aqui se precisar
 		 reloadPage();
 		}).fail(function() {
-		    alert( "Erro ao enviar confirmaÃ§Ã£o de leitura da mensagem." );
+		    alert( "Erro ao enviar confirmação de leitura da mensagem." );
 		});
 	
 }
@@ -902,19 +902,19 @@ function gerenciaTeclaEnter() {
 		});
 
 		$('input[type=text]').keydown(function(e) {
-			// Obter o prÃ³ximo Ã­ndice do elemento de entrada de texto
+			// Obter o próximo índice do elemento de entrada de texto
 			var next_idx = $('input[type=text]').index(this) + 1;
 
-			// Obter o nÃºmero de elemento de entrada de texto em um documento html
+			// Obter o número de elemento de entrada de texto em um documento html
 			var tot_idx = $('body').find('input[type=text]').length;
 
-			// Entra na tecla no cÃ³digo ASCII
+			// Entra na tecla no código ASCII
 			if (e.keyCode === 13) {
 				if (tot_idx === next_idx)
-					// Vai para o primeiro elemento de texto
+					// Vá para o primeiro elemento de texto
 					$('input[type=text]:eq(0)').focus();
 				else
-					// Vai para o elemento de entrada de texto seguinte
+					// Vá para o elemento de entrada de texto seguinte
 					$('input[type=text]:eq(' + next_idx + ')').focus();
 			}
 		});
@@ -988,7 +988,7 @@ function invocaApplet(context) {
 	
 	   //Faz algo com ajax...
 	    
-		var url = context + "/applet/imprimir.jsp?impressoraImprimir=" + null;// passando null para pegar a padrÃ£o
+		var url = context + "/applet/imprimir.jsp?impressoraImprimir=" + null;// passando null para pegar a padrão
 		
 		var title = "Imprimindo...";
 		var w = "150"; 

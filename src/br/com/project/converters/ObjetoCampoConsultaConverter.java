@@ -10,9 +10,9 @@ import javax.faces.convert.FacesConverter;
 import br.com.project.bean.geral.ObjetoCampoConsulta;
 
 /**
- * Responsavel por efetuar a convers√£o nos combos de campos de consulta
+ * Responsavel por efetuar a convers„o nos combos de campos de consulta
  * 
- *  @author Calebe Werneck Couto
+ * @author alex
  * 
  */
 @FacesConverter(forClass = ObjetoCampoConsulta.class)
@@ -38,7 +38,7 @@ public class ObjetoCampoConsultaConverter implements Converter, Serializable {
 			ObjetoCampoConsulta c = (ObjetoCampoConsulta) value;
 			return c.getCampoBanco() + "*" + c.getTipoClass();
 		} else {
-			return "N√£o foi poss√≠vel estabeler o valor";
+			return "N„o foi possÌvel estabeler o valor";
 		}
 	}
 

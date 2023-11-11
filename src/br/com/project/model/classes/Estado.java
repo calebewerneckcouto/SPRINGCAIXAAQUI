@@ -24,8 +24,6 @@ import org.hibernate.annotations.ForeignKey;
 import org.hibernate.envers.Audited;
 import org.hibernate.envers.NotAudited;
 
-
-
 import br.com.project.annotation.IdentificaCampoPesquisa;
 
 @Audited
@@ -36,7 +34,7 @@ public class Estado implements Serializable {
 
 	private static final long serialVersionUID = 2761222955627513137L;
 
-	@IdentificaCampoPesquisa(descricaoCampo = "Código", campoConsulta = "est_id")
+	@IdentificaCampoPesquisa(descricaoCampo = "C�digo", campoConsulta = "est_id")
 	@Id
 	@GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "estado_seq")
 	private Long est_id;

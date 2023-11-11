@@ -23,7 +23,7 @@ public class Pais implements Serializable {
 
 	private static final long serialVersionUID = -3563399263999877340L;
 
-	@IdentificaCampoPesquisa(descricaoCampo = "CÃ³digo", campoConsulta = "pai_id")
+	@IdentificaCampoPesquisa(descricaoCampo = "Código", campoConsulta = "pai_id")
 	@Id
 	@GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "pais_seq")
 	private Long pai_id;

@@ -26,10 +26,10 @@ import br.com.project.listener.ContextLoaderListenerCaixakiUtils;
 import br.com.project.model.classes.Entidade;
 
 /**
- * Responsavel por iniciar a sessão transaction do hibernate, iterceptar as
- * requisições/response, commit e rollback.
+ * Responsavel por iniciar a sess�o/transaction do hibernate, iterceptar as
+ * requisi��es/response, commit e rollback.
  * 
- *  @author Calebe Werneck Couto
+ * @author alex
  * 
  */
 @SuppressWarnings("unused")

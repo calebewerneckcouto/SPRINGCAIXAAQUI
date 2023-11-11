@@ -11,8 +11,8 @@ import br.com.framework.hibernate.session.HibernateUtil;
 import br.com.project.model.classes.Estado;
 
 /**
- * Responsavel por efetuar a convers√£o nos combos de campos de estado
- *  @author Calebe Werneck Couto
+ * Responsavel por efetuar a convers„o nos combos de campos de estado
+ * @author alex
  *
  */
 @FacesConverter(forClass = Estado.class)
