@@ -41,10 +41,10 @@
 	<!-- Data Source -->
 	<bean id="springDataSource" name="springDataSource" class="org.springframework.jndi.JndiObjectFactoryBean" lazy-init="false">
 		<property name="jndiName">
-			<value>java:comp/env/jdbc/datasouce</value> 
+			<value>java:comp/env/jdbc/datasource</value> 
 		</property>
 	</bean>
-	
+	<!--
 	<bean id="flyway" class="org.flywaydb.core.Flyway" init-method="migrate" lazy-init="false"> 
     	<property name="dataSource" ref="springDataSource"/> 
     	<property name="baselineOnMigrate" value="true"/>  
@@ -54,7 +54,7 @@
     	<property name="encoding" value="ISO-8859-1"/>
     	<property name="validateOnMigrate" value="false"/>
 	</bean>
-	
+	 Flyway -->
 	
 	 <bean id="transactionManager" name="transactionManager"   
          class="org.springframework.jdbc.datasource.DataSourceTransactionManager" lazy-init="false">
